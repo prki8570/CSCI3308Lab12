@@ -12,19 +12,19 @@ class Computer:
     # implement the class below this line    
 
 
-    def start_computer(self):
-        parts.CPU.check()
-        parts.Memory.load()
-        parts.HardDisk.mount()
+    def startComputer(self):
+        self.cpu.check()
+        self.mem.load()
+        self.hd.mount()
         
     def printCPUInfo(self):
-        parts.CPU.getInfo()
+        self.cpu.getInfo()
     
     def printMemInfo(self):
-        parts.Memory.getInfo()
+        self.mem.getInfo()
         
-    def prinHDInfo(self):
-        parts.HardDisk.getInfo()
+    def printHDInfo(self):
+        self.hd.getInfo()
 
 
 
